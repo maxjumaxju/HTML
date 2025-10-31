@@ -1,18 +1,32 @@
+<!-- 整個 HTML 文件的開始 -->
 <html>
     <head>
+        <!-- 設定網頁標題 -->
         <title>css</title>
-        <!--external(外部) css-->
+
+        <!-- external（外部）CSS：從外部連結匯入樣式表 -->
         <link rel="stylesheet" href="https://rawcdn.githack.com/shhuangmust/html/fc0253b382011528e5bcc69e74425c6d03f1adc3/import.css">
-        <!--internal(內部) css-->
+
+        <!-- internal（內部）CSS：直接在此頁面中定義樣式 -->
         <style>
-            h2 {color:green;} 
+            /* 這裡是內部 CSS，用來設定 h2 標籤的顏色為綠色 */
+            h2 {
+                color: green;
+            }
         </style>
     </head>
+
     <body>
+        <!-- inline（行內）CSS：直接在標籤內用 style 屬性設定樣式 -->
         <h1 style="color:red;">
-            這是甚麼顏色 <!--inline(行內) css-->
+            這是甚麼顏色 <!-- inline(行內) css -->
         </h1>
+
+        <!-- 使用 internal（內部）CSS 設定的 h2 顏色：綠色 -->
         <h2>這是甚麼顏色</h2>
+
+        <!-- 使用 external（外部）CSS 設定的 h3 樣式（樣式來自 import.css） -->
         <h3>這是甚麼顏色</h3>
     </body>
 </html>
+<!-- 整個 HTML 文件的結尾 -->
